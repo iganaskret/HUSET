@@ -1,28 +1,32 @@
-const position = document.querySelector(".position");
-const date = document.querySelector(".date");
-const positionMenu = document.querySelector(".position-menu");
-const dateMenu = document.querySelector(".date-menu");
-const searchButton = document.querySelector(".findEvents");
+// FETCHING 
+let myLink = "https://andreamakarova.dk/kea/wp-huset/wp-json/wp/v2/events?_embed";
+const template = document.querySelector("template").content;
+const parent = document.querySelector("main");
 
-
-date.addEventListener("click", () => {
-    dateMenu.classList.toggle("hide");
-});
-
-position.addEventListener("click", () => {
-    positionMenu.classList.toggle("hide");
-});
-
-
-// Open and Close Burger menu //
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-    filterButton.style.zIndex=0;
+function loadData(link){
+fetch(link).then(e=>e.json()).then(data=>show(data));
 }
 
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-    setTimeout(()=>{
-        filterButton.style.zIndex=1
-    }, 500);
+function show(data){
+data.forEach(post => {
+    console.log(post);
+    //clone
+    const clone = template.cloneNode(true);
+    //populate
+    const h1 = clone.querySelector("h1");
+    const h2 = clone.querySelector("h2");
+    const img = clone.querySelector("img");
+    const location = clone.querySelector(".location");
+    const price = clone.querySelector(".price");
+    h1.textContent = post.title.rendered;
+    h2.innerHTML =  post.event_date;
+    location.innerHTML = post.location;
+    price.innerHTML = post.ticket_price + " dkk";
+    img.src = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
+    //append
+    parent.appendChild(clone);
 }
+);
+}
+
+loadData(myLink);

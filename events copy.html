@@ -24,8 +24,8 @@
                     <a href="#"><img src="images/heart.png" alt="heart icon" id="heart-icon" class="icon-menu">FAVOURITES</a>
 
                     <a href="#"><img src="images/tickets.png" alt="tickets icon" id="ticket-icon" class="icon-menu">MY TICKETS</a>
-                    
-                    <a href=#><img src="images/profile.png" alt="profile-icon" id="profile-icon" class="icon-menu">PROFILE </a>
+
+                    <a href=#><img src="images/profile.png" alt="profile-icon" id="profile-icon" class="icon-menu"><span>PROFILE</span></a>
                 </div>
             </div>
         </nav>
@@ -36,46 +36,66 @@
         <img class="logo" src="images/Huset_logo_4_B.png" alt="logo">
 
         <div class="icons">
+            <div class="genre">
+                <img src="images/music.png" alt="genre-logo" id="genre-icon">
+                <p>choose genre</p>
+            </div>
+            <div class="genre-menu">
+                <label><input type="checkbox">
+                    <h3>alternative</h3>
+                </label>
+
+                <label><input type="checkbox" checked>
+                    <h3>electronic</h3>
+                </label>
+
+                <label><input type="checkbox">
+                    <h3>jazz</h3>
+                </label>
+
+                <label><input type="checkbox">
+                    <h3>country</h3>
+                </label>
+
+                <label><input type="checkbox">
+                    <h3>rock</h3>
+                </label>
+
+                <label><input type="checkbox" checked>
+                    <h3>pop</h3>
+                </label>
+
+                <label><input type="checkbox">
+                    <h3>hip-hop</h3>
+                </label>
+
+                <label><input type="checkbox">
+                    <h3>folk</h3>
+                </label>
+
+                <label><input type="checkbox" checked>
+                    <h3>rap</h3>
+                </label>
+
+                <label><input type="checkbox">
+                    <h3>punk</h3>
+                </label>
+            </div>
+
             <div class="date">
                 <img src="images/calendar-icon.png" alt="calendar-logo">
                 <p>choose date</p>
             </div>
-            <div class="date-menu hide">
+            <div class="date-menu">
                 <div class="arrow-up"></div>
                 <div class="arrow-up"></div>
                 <div class="arrow-up"></div>
-                <h3> DAY </h3>
+                <h3 id="day"> DAY </h3>
                 <h3> MONTH </h3>
-                <h3> YEAR </h3>
+                <h3 id="year"> YEAR </h3>
                 <div class="arrow-down"></div>
                 <div class="arrow-down"></div>
                 <div class="arrow-down"></div>
-            </div>
-            <div class="position">
-                <img src="images/positions-icon.png" alt="genre-logo" id="positions-icon">
-                <p>choose POSITION</p>
-            </div>
-            <div class="position-menu hide">
-                <label><input type="checkbox">
-                    <h3>ticket sales <span class="read-more">(read more)</span></h3>
-                </label>
-
-                <label><input type="checkbox">
-                    <h3>ticket inspection <span class="read-more">(read more)</span></h3>
-                </label>
-
-                <label><input type="checkbox">
-                    <h3>cleaning <span class="read-more">(read more)</span></h3>
-                </label>
-
-                <label><input type="checkbox">
-                    <h3>bartending <span class="read-more">(read more)</span></h3>
-                </label>
-
-                <label><input type="checkbox">
-                    <h3>customer handling <span class="read-more">(read more)</span></h3>
-                </label>
-
             </div>
 
             <button id="apply-now"> APPLY NOW </button>
@@ -88,6 +108,18 @@
         </div>
 
     </main>
+
+    <template>
+        <article>
+            <h1> band name </h1>
+            <h2> date </h2>
+            <img src="#" alt="img" class="featured-img">
+            <p> <span class="location"> location </span> <span class="price"> price (dkk)</span> </p>
+            <img src="images/heart.png" alt="add to favourites" class="add-fav">
+            <button class="buy-ticket"> BUY TICKET</button>
+        </article>
+    </template>
+
     <script src="script%20copy.js"></script>
 </body>
 

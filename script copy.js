@@ -1,10 +1,13 @@
 // FETCHING 
-let myLink = "https://andreamakarova.dk/kea/wp-huset/wp-json/wp/v2/events?_embed";
+let myLink = "https://andreamakarova.dk/kea/wp-huset/wp-json/wp/v2/";
 const template = document.querySelector("template").content;
 const parent = document.querySelector("main");
+const catID = urlParms.get("cat");
+
 
 function loadData(link){
-fetch(link).then(e=>e.json()).then(data=>show(data));
+fetch(myLink + "events?categories=" + cat + "&_embed").then(e => e.json()).then(show);
+
 }
 
 function show(data){

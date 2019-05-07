@@ -159,35 +159,31 @@ div.icons {
 }
 
 label {
-    display: inline-block;
-    position: relative;
     cursor: pointer;
+     font-weight: 100;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .genre-menu {
     background-color: var(--secondary-color);
     width: 280px;
-    padding-left: 40px;
-    font-size: 0.7em;
-    padding: 20px;
+    font-size: 0.9em;
     margin-left: -90px;
     margin-right: auto;
     text-transform: uppercase;
-    position: relative;
-    display: inline-block;
+    padding: 20px;
 }
 
 input {
     margin-top: 0px;
+    margin-right: 0;
+    padding-right: 0;
 }
 
-.genre-menu h3:hover {
+.genre-menu label:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-
-.genre-menu h3 {
-    font-weight: 100;
 }
 
 .genre-menu span:hover {

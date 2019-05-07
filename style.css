@@ -1,5 +1,5 @@
 :root {
-  --main-color: orangered;
+    --main-color: orangered;
 }
 
 * {
@@ -126,8 +126,9 @@ input {
 
 
 /*main*/
+
 #logo-mobile {
-   width: 60px;
+    width: 60px;
 }
 
 img.logo {
@@ -142,6 +143,8 @@ div.icons {
     margin-right: auto;
     width: 8em;
     padding-top: 120px;
+    margin-bottom: 120px;
+    position: relative;
 }
 
 .icons img {
@@ -158,25 +161,86 @@ div.icons {
 }
 
 .arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 
-  border-bottom: 5px solid black;
+    border-bottom: 5px solid white;
 }
 
 .arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 
-  border-top: 5px solid black;
+    border-top: 5px solid white;
 }
+
+.arrow-down:hover {
+    border-top: 5px solid white;
+}
+
+.arrow-up:hover {
+    border-bottom: 5px solid white;
+}
+
+.date-menu {
+    background-color: var(--main-color);
+    display: grid;
+    width: 150px;
+    font-size: 0.7em;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-template-rows: 1fr 4fr 1fr;
+    margin-left: -30px;
+    margin-right: auto;
+    color: white;
+}
+
+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.position-menu {
+    background-color: var(--main-color);
+    width: 250px;
+    font-size: 0.7em;
+    color: white;
+    padding: 20px;
+    margin-left: -80px;
+    margin-right: auto;
+    text-transform: uppercase;
+    z-index: 10;
+    position: relative;
+}
+
+input {
+    margin-top: 0px;
+}
+
+.position-menu h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.position-menu span:hover {
+    text-decoration: none;
+}
+
+.read-more {
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
 
 #positions-icon {
     opacity: 0.83;
+    margin-top: 20px;
 }
 
 #apply-now {
@@ -187,15 +251,16 @@ div.icons {
     font-size: 1em;
     background-color: var(--main-color);
     color: white;
+    margin-left: -10px;
 }
 
 /* UPCOMING EVENTS */
 .events {
- margin-top: 100px;
+    position: static;
 }
 
 #upcoming-events {
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     font-size: 1.6em;
     width: 250px;
@@ -245,8 +310,6 @@ div.icons {
 .hide {
     display: none;
 }
-
-
 
 
 /* Media query for mobile version */
@@ -351,66 +414,17 @@ div.icons {
     }
 
     #location-menu {
-    position: absolute;
-    top: 160px;
+        position: absolute;
+        top: 160px;
 
-    background-color: white;
-    height: 290px;
+        background-color: white;
+        height: 290px;
         width: 70px;
-    padding: 30px;
-    padding-bottom: 12px;
-    padding-top: 5px;
-    z-index: 1;
-    transform: translateX(0px);
-}
-
-#genre-menu {
-    position: absolute;
-    top: 160px;
-    left: 35%;
-    background-color: white;
-    width: 150px;
-    height: 130px;
-    padding: 10px;
-    padding-bottom: 0px;
-    padding-top: 5px;
-    padding-right: 0;
-    z-index: 1;
-    transform: translateX(0px);
-}
-
-#genre-menu p {
-    cursor: pointer;
-   text-align: center;
-
-}
-
-#genre-menu p:hover {
-    text-decoration: underline;
-}
-
-
-#date-menu {
-    position: absolute;
-    top: 160px;
-    left: 68%;
-    background-color: white;
-    width: 80px;
-    height: auto;
-    padding: 30px;
-    padding-bottom: 3px;
-    padding-top: 5px;
-    padding-left: 0;
-    z-index: 1;
-    transform: translateX(0px);
-}
-
-#date-menu img {
-    width: 20%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+        padding: 30px;
+        padding-bottom: 12px;
+        padding-top: 5px;
+        z-index: 1;
+        transform: translateX(0px);
+    }
 
 }

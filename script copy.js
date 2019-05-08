@@ -6,7 +6,7 @@ const parent = document.querySelector("main");
 
 
 function loadData(){
-fetch(myLink + "events?categories=music&_embed").then(e => e.json()).then(show);
+fetch(myLink + "events/categories=music&_embed").then(e => e.json()).then(show);
 
 }
 

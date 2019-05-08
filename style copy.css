@@ -81,7 +81,8 @@ input {
 }
 
 img.logo {
-    width: 160px;
+    width: 190px;
+    padding-top: 30px;
     position: fixed;
     top: 80px;
     z-index: -1;
@@ -176,19 +177,66 @@ label {
     padding: 20px;
 }
 
-input {
-    margin-top: 0px;
-    margin-right: 0;
-    padding-right: 0;
+/* container for genres */
+.container-g {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 7px;
+  cursor: pointer;
+  font-size: 13px;
 }
 
-.genre-menu label:hover {
-    text-decoration: underline;
-    cursor: pointer;
+/* hide the browser's default checkbox */
+.container-g input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
-.genre-menu span:hover {
-    text-decoration: none;
+/* checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* hovor when you click on the checkbox */
+.container-g:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* when the checkbox is checked */
+.container-g input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* hide checkmark when is not checked */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* show the checkmark when checked */
+.container-g input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* style for checkmark */
+.container-g .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .read-more {

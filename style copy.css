@@ -274,8 +274,8 @@ article.Music {
 article .add-fav {
     width: 15px; 
     position: absolute;
-    transform: translateY(-182px);
-    margin-left: 205px;
+    transform: translateY(-163px);
+    margin-left: 265px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -297,43 +297,36 @@ article img {
     margin-left: auto;
     margin-right: auto;
 }
+
 article h2 {
     position: absolute;
     text-align: right;
-    font-size: 70%;
+    font-size: 60%;
     color: white;
     font-weight: 200;
-    padding-left: 250px;
-    transform: translateY(-42px);
-}
-article p {
+    padding-left: 290px;
+    transform: translateY(-25px);
+} 
+/*article p {
     position: absolute;
     transform: translateY(-6px);
     padding-left: 0px;
     font-size: 70%;
     color: white;
     font-weight: 200;
-}
+} */
 
-article .location {
+article p {
+    margin-top: 0px;
+    height: 20px;
+    padding: 6px;
+    font-size: 70%;
+    width: 288px;
     color: black;
-    width: 86px;
-    position: absolute;
-    transform: translateY(-172px);
-    font-weight: 400;
-    padding-left: 65px;
     margin-left: auto;
     margin-right: auto;
-
-}
-
-article .price {
-    color: black;
-    padding-left: 150px;
-    width: 90px;
-    position: absolute;
-    transform: translateY(-172px);
-    font-weight: 400;
+    transform: translateY(-170px);
+    text-decoration: none;
 }
 
 
@@ -353,6 +346,29 @@ article .price {
     opacity: 0;
 }
 
+/*article .location {
+    color: black;
+    width: 86px;
+    position: absolute;
+    transform: translateY(-170px);
+    font-weight: 400;
+    padding-left: 65px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+article .price {
+    color: black;
+    padding-left: 150px;
+    width: 90px;
+    position: absolute;
+    transform: translateY(-170px);
+    font-weight: 400;
+} 
+
+
+
 article button {
     background: none;
     text-transform: uppercase;
@@ -365,6 +381,21 @@ article button {
     padding-bottom: 0px;
     font-size: 60%;
     width: 70px;
+} */
+
+article button {
+    background: none;
+    text-transform: uppercase;
+    border: solid 1px black;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 60%;
+    color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-210px);
 }
 
 .featured-img {
@@ -455,12 +486,12 @@ article button {
     padding-bottom: 0px;
     font-size: 60%;
     width: 70px;
-}
+} */
 
 
 .hide {
     display: none;
-} */
+}
 
 /* Media query for mobile version */
 @media (min-width: 0px) {}

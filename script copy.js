@@ -6,6 +6,8 @@ const parent = document.querySelector("main");
 
 
 
+
+
 function loadData(){
 fetch(myLink).then(e => e.json()).then(show);
 }
@@ -35,7 +37,7 @@ article.classList.add(post.event_category);
     price.innerHTML = post.ticket_price + " dkk";
     img.src = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
     
-    
+    clone.querySelector("a").href = "sub-page.html?id=" + post.id;
     console.log(post);
 
     //append

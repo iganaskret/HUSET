@@ -26,12 +26,8 @@ nav {
     font-size: 60%;
     position: fixed;
     background-color: white;
-    top: 0px;
-    left: 0px;
-    padding: 0;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
     z-index: 1;
-    overflow: auto;
 }
 
 nav a {
@@ -49,22 +45,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-input {
-    border: none;
-    width: 140px;
-    font-size: 80%;
-}
-
 .icon-menu {
-    width: 25px;
-    padding: 10px;
-
+    width: 33px;
+    padding-top: 8px;
 }
 
 #icons-right {
     margin: 0 auto;
-    padding: 0;
 }
 
 #icons-rigt span {
@@ -75,9 +62,11 @@ input {
 /*main*/
 
 #logo-mobile {
-    width: 60px;
+    width: 55px;
     float: left;
-    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 img.logo {

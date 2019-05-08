@@ -217,6 +217,13 @@ input {
     position: static;
 }
 
+article {
+    display: none
+}
+article.Music {
+    display: block
+}
+
 #upcoming-events {
     margin-left: auto;
     margin-right: auto;

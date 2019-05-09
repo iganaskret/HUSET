@@ -500,9 +500,9 @@ h2.eventDate {
 .profileImage {
 
     width: 45%;
-    padding-left: 6%;
-    padding-top: 95px;
-    top: 12%;
+    padding-left: 5%;
+    padding-top: 89px;
+    top: 10%;
 
 
 }
@@ -517,7 +517,7 @@ h2.eventDate {
 
 .profileMail,
 .profilePhone {
-    width: 32px;
+    width: 36px;
 }
 
 .profileMail {

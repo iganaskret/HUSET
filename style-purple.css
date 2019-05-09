@@ -1,6 +1,6 @@
 :root {
-    --main-color: #FFF697;
-    --secondary-color: #FDF9D3;
+    --main-color: #C8C0CC;
+    --secondary-color: #E7E4E8;
 }
 
 * {
@@ -171,7 +171,7 @@ label {
     margin-left: -55px;
     margin-right: auto;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 15px;
 }
 
 /* container for genres */
@@ -267,7 +267,7 @@ article {
     display: none;
 }
 
-article.Music {
+article.Movie {
     display: block;
     margin-bottom: 0px;
     padding-bottom: 0;
@@ -282,7 +282,7 @@ article.Music {
 }
 
 article .add-fav {
-    width: 15px; 
+    width: 15px;
     transform: translateY(-204px);
     margin-left: 200px;
     padding-top: 0px;
@@ -331,11 +331,11 @@ article h2 {
     font-weight: 200;
     padding-left: 290px;
     transform: translateY(-25px);
-} 
+}
 
-article p.placeAndPrice {
+article p {
     margin-top: 0px;
-    height: 20px;
+    height: 20qpx;
     padding: 6px;
     font-size: 70%;
     width: 288px;
@@ -399,7 +399,7 @@ article button {
 =======
 .hide {
     display: none;
-} 
+}
 >>>>>>> origin/master
 
 /* Media query for mobile version */
@@ -423,7 +423,7 @@ button.buyTicket {
     background-color: var(--secondary-color);
     text-transform: uppercase;
     border: solid 1px black;
-    font-size: 80%;
+    font-size: 150%;
     width: 30%;
     padding: 1.5%;
     margin-left: 10%;
@@ -443,7 +443,7 @@ button a {
 
 }
 
-.Music .detail-img {
+.detail-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -451,36 +451,25 @@ button a {
     width: 100%;
 }
 
-.eventContent {
-position: relative;
+p.content {
+
     width: 80%;
     margin-top: 0%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10%;
-    padding-right: 10%;
- width: 80%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 10%;
     background-color: var(--secondary-color);
-  
 }
 
-.Music .genre {
-    position: relative;
+p.genre {
     margin-top: 0%;
     background-color: var(--secondary-color);
-    padding-bottom: 0%;
+    padding-bottom: 5%;
     margin-bottom: 0%;
-    transform: translateY(0%);
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
-.Music h1.eventName {
+h1.eventName {
     background-color: var(--secondary-color);
-    position: relative;
     color: black;
     margin: 0%;
     padding-left: 10%;
@@ -492,7 +481,7 @@ position: relative;
 
 }
 
-.Music h2.eventDate {
+h2.eventDate {
     background: var(--secondary-color);
     color: black;
     position: relative;
@@ -503,17 +492,15 @@ position: relative;
     padding-left: 10%;
     font-weight: 300;
     font-size: 80%;
-    text-align: left;
 }
 
-.country, .genre, .support, eventLocation, .eventPrice {
+#detail-main p {
+    position: relative;
+    color: black;
+    padding-right: 10%;
     padding-left: 10%;
 }
-.Music p {
 
-    font-size: 80%;
-   
-}
 
 /*profile*/
 
@@ -541,7 +528,7 @@ position: relative;
 }
 
 .profileMail {
- transform: translateX(-280%) translateY(-30%);  
+ transform: translateX(-280%) translateY(-30%);
 }
 
 .profilePhone {

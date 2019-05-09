@@ -333,7 +333,7 @@ article h2 {
     transform: translateY(-25px);
 } 
 
-article p {
+article p.placeAndPrice {
     margin-top: 0px;
     height: 20px;
     padding: 6px;
@@ -423,7 +423,7 @@ button.buyTicket {
     background-color: var(--secondary-color);
     text-transform: uppercase;
     border: solid 1px black;
-    font-size: 150%;
+    font-size: 80%;
     width: 30%;
     padding: 1.5%;
     margin-left: 10%;
@@ -443,7 +443,7 @@ button a {
 
 }
 
-.detail-img {
+.Music .detail-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -451,25 +451,36 @@ button a {
     width: 100%;
 }
 
-p.content {
-
+.eventContent {
+position: relative;
     width: 80%;
     margin-top: 0%;
     margin-left: auto;
     margin-right: auto;
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+ width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-color: var(--secondary-color);
+  
 }
 
-p.genre {
+.Music .genre {
+    position: relative;
     margin-top: 0%;
     background-color: var(--secondary-color);
-    padding-bottom: 5%;
+    padding-bottom: 0%;
     margin-bottom: 0%;
+    transform: translateY(0%);
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-h1.eventName {
+.Music h1.eventName {
     background-color: var(--secondary-color);
+    position: relative;
     color: black;
     margin: 0%;
     padding-left: 10%;
@@ -481,7 +492,7 @@ h1.eventName {
 
 }
 
-h2.eventDate {
+.Music h2.eventDate {
     background: var(--secondary-color);
     color: black;
     position: relative;
@@ -492,15 +503,17 @@ h2.eventDate {
     padding-left: 10%;
     font-weight: 300;
     font-size: 80%;
+    text-align: left;
 }
 
-#detail-main p {
-    position: relative;
-    color: black;
-    padding-right: 10%;
+.country, .genre, .support, eventLocation, .eventPrice {
     padding-left: 10%;
 }
+.Music p {
 
+    font-size: 80%;
+   
+}
 
 /*profile*/
 

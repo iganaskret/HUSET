@@ -5,7 +5,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-
+text-decoration: none;
 }
 
 body {
@@ -21,6 +21,7 @@ button {
     cursor: pointer;
 }
 
+.selected {text-decoration: underline;}
 /* header */
 nav {
     text-transform: uppercase;

@@ -273,11 +273,18 @@ article.Music {
 
 article .add-fav {
     width: 15px; 
-    transform: translateY(-207px);
-    margin-left: auto;
-    margin-right: auto;
+    transform: translateY(-204px);
+    margin-left: 200px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.heart {
+    width: 300px;
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 article h1 {
@@ -298,6 +305,14 @@ article img {
     margin-right: auto;
 }
 
+.date-container {
+    display: block;
+    width: 430px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 article h2 {
     position: absolute;
     text-align: right;
@@ -307,18 +322,10 @@ article h2 {
     padding-left: 290px;
     transform: translateY(-25px);
 } 
-/*article p {
-    position: absolute;
-    transform: translateY(-6px);
-    padding-left: 0px;
-    font-size: 70%;
-    color: white;
-    font-weight: 200;
-} */
 
 article p {
     margin-top: 0px;
-    height: 20px;
+    height: 20qpx;
     padding: 6px;
     font-size: 70%;
     width: 288px;
@@ -346,42 +353,14 @@ article p {
     opacity: 0;
 }
 
-/*article .location {
-    color: black;
-    width: 86px;
-    position: absolute;
-    transform: translateY(-170px);
-    font-weight: 400;
-    padding-left: 65px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-article .price {
-    color: black;
-    padding-left: 150px;
-    width: 90px;
-    position: absolute;
-    transform: translateY(-170px);
-    font-weight: 400;
-} 
-
-
-
-article button {
-    background: none;
-    text-transform: uppercase;
-    border: solid 1px black;
-    transform: translateY(-165px);
+article .button {
     display: block;
-    margin-left: 68.5%;
+    width: 300px;
+    height: 30px;
+     margin-left: auto;
     margin-right: auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 60%;
-    width: 70px;
-} */
+    margin-top: 0;
+}
 
 article button {
     background: none;
@@ -396,98 +375,12 @@ article button {
     margin-left: auto;
     margin-right: auto;
     transform: translateY(-220px);
+    float: right;
 }
 
 .featured-img {
      height: 170px;
 }
-
-
-/* article .add-fav {
-    width: 15px;
-    position: absolute;
-    transform: translateY(-182px);
-    margin-left: 205px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-article h1 {
-    margin-bottom: 0px;
-    padding: 6px;
-    font-size: 70%;
-    width: 288px;
-    background-color: black;
-    color: white;
-}
-
-article img {
-    width: 300px;
-}
-
-article h2 {
-    position: absolute;
-    transform: translateY(-42px);
-    padding-left: 227px;
-    font-size: 70%;
-    color: white;
-    font-weight: 200;
-}
-
-article p {
-    position: absolute;
-    transform: translateY(-6px);
-    padding-left: 0px;
-    font-size: 70%;
-    color: white;
-    font-weight: 200;
-}
-
-article .location {
-    color: black;
-    width: 86px;
-    position: absolute;
-    transform: translateY(-188px);
-    font-weight: 400;
-
-}
-
-article .price {
-    color: black;
-    padding-left: 87px;
-    width: 90px;
-    position: absolute;
-    transform: translateY(-188px);
-    font-weight: 400;
-
-
-}
-
-
-.black {
-    width: 300px;
-    height: 186px;
-    background-color: black;
-    display: block;
-    position: relative;
-    top: -193px;
-    opacity: 0.5;
-
-
-}
-
-article button {
-    background: none;
-    text-transform: uppercase;
-    border: solid 1px black;
-    transform: translateY(-190px);
-    margin-left: 230px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 60%;
-    width: 70px;
-} */
-
 
 .hide {
     display: none;
@@ -507,7 +400,6 @@ article button {
     }
 
 }
-
 
 /* sub-page*/
 button.back, button.buyTicket{

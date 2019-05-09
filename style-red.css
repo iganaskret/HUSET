@@ -500,7 +500,7 @@ position: relative;
     text-align: left;
 }
 
-.country, .genre, .support, .eventLocation, .eventPrice {
+.country, .genre, .support, .eventLocation, .eventPrice, .positions-available {
     padding-left: 10%;
 }
 .Volunteering p {

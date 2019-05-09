@@ -10,7 +10,7 @@ function showEvents(data) {
     document.querySelector("h1").textContent = data.title.rendered;
     document.querySelector("h2").textContent = data.event_date;
     document.querySelector(".genre").textContent = "Genre: " + data.event_genre;
-    document.querySelector(".content").textContent = data.content.rendered;
+    document.querySelector(".content").innerHTML = data.content.rendered;
     document.querySelector(".country").textContent = "Country: " + data.country;
     if (data.support == true) {
         document.querySelector(".support").textContent = "Support: " + data.support;

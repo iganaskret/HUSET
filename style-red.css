@@ -49,9 +49,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.selected {
-    text-decoration: underline;
-}
 .icon-menu {
     width: 33px;
     padding-top: 8px;
@@ -264,10 +261,6 @@ label {
 }
 
 article {
-    display: none;
-}
-
-article.Music {
     display: block;
     margin-bottom: 0px;
     padding-bottom: 0;

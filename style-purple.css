@@ -578,7 +578,10 @@ h2.eventDate {
     font-size: 80%;
 
 }
-
+p#tytul{
+    font-weight: 700;
+    text-transform: capitalize;
+}
 p.first {
     margin-top: 2%;
     padding-bottom: 2%;
@@ -595,7 +598,7 @@ p.bold {
 
 
 .rating p {
-    padding-left: 10%;
+    padding-left: 8%;
     padding-right: 10%;
     background-color: white;
     padding-top: 2%;

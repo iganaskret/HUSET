@@ -38,7 +38,7 @@ function showEvents(data) {
     };
 
        if (data.year !== "") {
-        document.querySelector(".year").textContent = data.year;
+        document.querySelector(".year").textContent = "Year: " + data.year;
     };
 
      if (data.ticket_price !== "0") {
@@ -53,3 +53,5 @@ function showEvents(data) {
 
 
 };
+
+

@@ -517,7 +517,8 @@ button a {
 .director,
 .language,
 .subtitles,
-.duration {
+.duration,
+.year{
     padding-left: 10%;
 }
 

@@ -510,51 +510,54 @@ h2.eventDate {
     padding-left: 6%;
     padding-top: 95px;
     top: 12%;
-
+    margin-right: 30px;
 
 }
 
 .profileName {
     text-transform: uppercase;
-    position: absolute;
     top: 10%;
-    left: 53%;
+    left: 59%;
     font-size: 120%;
+    margin-left: 15px;
 }
 
 .profileMail,
 .profilePhone {
-    width: 32px;
+    width: 42px;
 }
 
 .profileMail {
- transform: translateX(-280%) translateY(-30%);
+ transform: translateX(-250%) translateY(-30%);
 }
 
 .profilePhone {
- transform: translateX(-240%) translateY(-30%);
+ transform: translateX(-210%) translateY(-30%);
 }
 
 .Mail,
 .Phone {
     position: absolute;
-    left: 57%;
+    left: 59%;
     text-decoration: none;
     color: black;
     font-size: 70%;
 }
 
 .Mail {
-    top: 23%;
+    top: 29%;
+    left: 63%;
+    width: 90px;
 }
 
 .Phone {
     top: 28%;
+    width: 100px;
 }
 
 .profileButton {
     position: absolute;
-    left: 53%;
+    left: 57%;
     top: 33%;
     text-transform: uppercase;
     border: solid 1px black;
@@ -600,7 +603,7 @@ p.bold {
 }
 
 p.stars {
-    color: #FFEB1D;
+    color: #60188F;
     font-size: 100%;
 }
 

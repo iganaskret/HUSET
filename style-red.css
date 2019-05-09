@@ -501,7 +501,11 @@ position: relative;
     text-align: left;
 }
 
+<<<<<<< HEAD
+.country, .genre, .support, .eventLocation, .eventPrice, .positions-available {
+=======
 .country, .genre, .support, .eventLocation, .eventPrice, .positions {
+>>>>>>> origin/master
     padding-left: 10%;
 }
 .Volunteering p {

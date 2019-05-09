@@ -17,6 +17,10 @@ h3 {
     font-weight: 100;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* header */
 nav {
     text-transform: uppercase;
@@ -37,7 +41,7 @@ nav a {
     padding: 0;
     display: inline-block;
     text-align: center;
-    width: 80px;
+    width: 60px;
     float: right;
 }
 
@@ -45,6 +49,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.selected {
+    text-decoration: underline;
+}
 .icon-menu {
     width: 33px;
     padding-top: 8px;
@@ -64,9 +71,10 @@ nav a:hover {
 #logo-mobile {
     width: 55px;
     float: left;
-    padding-top: 5px;
+    padding-top: 2px;
     padding-bottom: 5px;
-    padding-left: 10px;
+    padding-left: 5px;
+
 }
 
 img.logo {
@@ -168,64 +176,64 @@ label {
 
 /* container for genres */
 .container-g {
-  display: block;
-  position: relative;
-  padding-left: 40px;
-  margin-bottom: 7px;
-  cursor: pointer;
-  font-size: 13px;
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    font-size: 13px;
 }
 
 /* hide the browser's default checkbox */
 .container-g input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* checkbox */
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  background-color: #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
 }
 
 /* hovor when you click on the checkbox */
 .container-g:hover input ~ .checkmark {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
 /* when the checkbox is checked */
 .container-g input:checked ~ .checkmark {
-  background-color: white;
+    background-color: white;
 }
 
 /* hide checkmark when is not checked */
 .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 /* show the checkmark when checked */
 .container-g input:checked ~ .checkmark:after {
-  display: block;
+    display: block;
 }
 
 /* style for checkmark */
 .container-g .checkmark:after {
-  left: 5px;
-  top: 2px;
-  width: 3px;
-  height: 7px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+    left: 5px;
+    top: 2px;
+    width: 3px;
+    height: 7px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .read-more {
@@ -261,6 +269,8 @@ article {
 
 article.Music {
     display: block;
+    margin-bottom: 0px;
+    padding-bottom: 0;
 }
 
 
@@ -381,10 +391,16 @@ article button {
 .featured-img {
      height: 170px;
 }
+<<<<<<< HEAD
 
 .hide {
     display: none;
 }
+=======
+.hide {
+    display: none;
+} 
+>>>>>>> origin/master
 
 /* Media query for mobile version */
 @media (min-width: 0px) {}
@@ -402,7 +418,8 @@ article button {
 }
 
 /* sub-page*/
-button.back, button.buyTicket{
+button.back,
+button.buyTicket {
     background-color: var(--secondary-color);
     text-transform: uppercase;
     border: solid 1px black;
@@ -416,13 +433,13 @@ button.back, button.buyTicket{
 
 button.buyTicket {
     transform: translateX(30%);
-    
+
 }
 
 button a {
     text-decoration: none;
     color: black;
-   
+
 
 }
 
@@ -434,9 +451,8 @@ button a {
     width: 100%;
 }
 
-p.content
-{
-    
+p.content {
+
     width: 80%;
     margin-top: 0%;
     margin-left: auto;
@@ -445,8 +461,7 @@ p.content
     background-color: var(--secondary-color);
 }
 
- p.genre
-{
+p.genre {
     margin-top: 0%;
     background-color: var(--secondary-color);
     padding-bottom: 5%;
@@ -461,7 +476,7 @@ h1.eventName {
     padding-right: 10%;
     padding-right: auto;
     padding-top: 5%;
-width: 80%;
+    width: 80%;
     font-size: 100%;
 
 }
@@ -484,4 +499,230 @@ h2.eventDate {
     color: black;
     padding-right: 10%;
     padding-left: 10%;
+}
+
+
+/*profile*/
+
+.profileImage {
+
+    width: 45%;
+    padding-left: 6%;
+    padding-top: 95px;
+    top: 12%;
+
+
+}
+
+.profileName {
+    text-transform: uppercase;
+    position: absolute;
+    top: 10%;
+    left: 53%;
+    font-size: 120%;
+}
+
+.profileMail,
+.profilePhone {
+    width: 32px;
+}
+
+.profileMail {
+ transform: translateX(-280%) translateY(-30%);  
+}
+
+.profilePhone {
+ transform: translateX(-240%) translateY(-30%);
+}
+
+.Mail,
+.Phone {
+    position: absolute;
+    left: 57%;
+    text-decoration: none;
+    color: black;
+    font-size: 70%;
+}
+
+.Mail {
+    top: 23%;
+}
+
+.Phone {
+    top: 28%;
+}
+
+.profileButton {
+    position: absolute;
+    left: 53%;
+    top: 33%;
+    text-transform: uppercase;
+    border: solid 1px black;
+    background: none;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+
+.profile p {
+    position: relative;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0%;
+    font-size: 80%;
+
+}
+
+p.first {
+    margin-top: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+
+}
+
+p.bold {
+
+    font-weight: 600;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.rating p {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    padding-top: 2%;
+    font-size: 80%;
+}
+
+p.stars {
+    color: #FFEB1D;
+    font-size: 100%;
+}
+
+p.review {
+    text-transform: none;
+    font-size: 70%;
+    padding-bottom: 5%;
+}
+
+img.arrow {
+    width: 3%;
+    padding-right: 48.5%;
+    padding-left: 48.5%;
+    transform: translateY(-22px);
+}
+
+@media (min-width: 350px) {
+    .profileName {
+        text-transform: uppercase;
+        position: absolute;
+        top: 10%;
+        left: 53%;
+        font-size: 120%;
+    }
+
+    .profileMail,
+    .profilePhone {
+        width: 32px;
+        position: absolute;
+        left: 52%;
+    }
+
+    .profileMail {
+        top: 20%;
+
+    }
+
+    .profilePhone {
+        top: 24%;
+
+    }
+
+
+    .Mail {
+        top: 20.7%;
+    }
+
+    .Phone {
+        top: 24.5%;
+    }
+
+    .profileButton {
+        top: 30%;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: white;
+    color: black;
+
+    /* grid for the footer */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "follow locations about contact"
+        ". copyright copyright .";
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.about {
+    grid-area: about;
+}
+
+.locations {
+    grid-area: locations;
+}
+
+.follow {
+    grid-area: follow;
+}
+
+.footer-title {
+    font-size: 13px;
+    text-align: left;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+.sub-text1 {
+    font-size: 10px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 3px;
+    cursor: default;
+    display: block;
+}
+
+.sub-text1:hover {
+    color: #ccc;
+    transition: 1s;
+}
+
+.icon-f {
+    width: 35px;
+    padding: 5px;
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.follow {
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -513,9 +513,9 @@ position: relative;
 .profileImage {
 
     width: 45%;
-    padding-left: 6%;
-    padding-top: 95px;
-    top: 12%;
+    padding-left: 5%;
+    padding-top: 89px;
+    top: 10%;
 
 
 }
@@ -530,7 +530,7 @@ position: relative;
 
 .profileMail,
 .profilePhone {
-    width: 32px;
+    width: 36px;
 }
 
 .profileMail {
@@ -606,7 +606,7 @@ p.bold {
 }
 
 p.stars {
-    color: #FFEB1D;
+    color: #E10000;
     font-size: 100%;
 }
 

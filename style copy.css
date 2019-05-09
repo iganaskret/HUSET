@@ -273,9 +273,9 @@ article.Music {
 
 article .add-fav {
     width: 15px; 
-    position: absolute;
-    transform: translateY(-163px);
-    margin-left: 265px;
+    transform: translateY(-207px);
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -395,7 +395,7 @@ article button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-210px);
+    transform: translateY(-220px);
 }
 
 .featured-img {

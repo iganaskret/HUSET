@@ -479,6 +479,7 @@ position: relative;
     margin: 0%;
     padding-left: 10%;
     padding-right: 10%;
+     padding-bottom: 10%
     padding-right: auto;
     padding-top: 5%;
     width: 80%;
@@ -500,7 +501,11 @@ position: relative;
     text-align: left;
 }
 
+<<<<<<< HEAD
 .country, .genre, .support, .eventLocation, .eventPrice, .positions-available {
+=======
+.country, .genre, .support, .eventLocation, .eventPrice, .positions {
+>>>>>>> origin/master
     padding-left: 10%;
 }
 .Volunteering p {

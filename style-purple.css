@@ -5,7 +5,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-text-decoration: none;
+    text-decoration: none;
 }
 
 body {
@@ -52,6 +52,7 @@ nav a:hover {
 .selected {
     text-decoration: underline;
 }
+
 .icon-menu {
     width: 33px;
     padding-top: 8px;
@@ -308,6 +309,7 @@ article h1 {
     margin-left: auto;
     margin-right: auto;
 }
+
 article img {
     width: 300px;
     display: block;
@@ -367,7 +369,7 @@ article .button {
     display: block;
     width: 300px;
     height: 30px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 0;
 }
@@ -389,18 +391,18 @@ article button {
 }
 
 .featured-img {
-     height: 170px;
+    height: 170px;
 }
-<<<<<<< HEAD
 
-.hide {
+<<<<<<< HEAD .hide {
     display: none;
 }
-=======
-.hide {
+
+=======.hide {
     display: none;
 }
->>>>>>> origin/master
+
+> > > > > > > origin/master
 
 /* Media query for mobile version */
 @media (min-width: 0px) {}
@@ -452,14 +454,14 @@ button a {
 }
 
 .eventContent {
-position: relative;
+    position: relative;
     width: 80%;
     margin-top: 0%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10%;
     padding-right: 10%;
- width: 80%;
+    width: 80%;
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: var(--secondary-color);
@@ -485,6 +487,7 @@ position: relative;
     margin: 0%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 10%;
     padding-right: auto;
     padding-top: 5%;
     width: 80%;
@@ -506,9 +509,18 @@ position: relative;
     text-align: left;
 }
 
-.country, .genre, .support, .eventLocation, .eventPrice {
+.country,
+.genre,
+.support,
+.eventLocation,
+.eventPrice,
+.director,
+.language,
+.subtitles,
+.duration {
     padding-left: 10%;
 }
+
 .Movie p {
     font-size: 80%;
 }
@@ -540,11 +552,11 @@ position: relative;
 }
 
 .profileMail {
- transform: translateX(-250%) translateY(-30%);
+    transform: translateX(-250%) translateY(-30%);
 }
 
 .profilePhone {
- transform: translateX(-210%) translateY(-30%);
+    transform: translateX(-210%) translateY(-30%);
 }
 
 .Mail,
@@ -590,10 +602,12 @@ position: relative;
     font-size: 80%;
 
 }
-p#tytul{
+
+p#tytul {
     font-weight: 700;
     text-transform: capitalize;
 }
+
 p.first {
     margin-top: 2%;
     padding-bottom: 2%;

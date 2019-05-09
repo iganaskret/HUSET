@@ -11,12 +11,26 @@ function showEvents(data) {
     document.querySelector("h2.eventDate").textContent = data.event_date;
     document.querySelector(".genre").textContent = "Genre: " + data.event_genre;
     document.querySelector(".eventContent").innerHTML = data.content.rendered;
-    document.querySelector(".country").textContent = "Country: " + data.country;
-    if (data.support == true) {
+
+    if (data.support !== "") {
         document.querySelector(".support").textContent = "Support: " + data.support;
     };
+
+     document.querySelector(".eventLocation").textContent = data.event_location;
+
+      if (data.country !== "") {
+        document.querySelector(".country").textContent = "Country: " + data.country;
+    };
+
+     if (data.ticket_price !== "0") {
+        document.querySelector(".eventPrice").textContent = data.ticket_price + " dkk";
+    }
+    else {
+        document.querySelector(".eventPrice").textContent = "free";
+    };
+
     document.querySelector(".eventLocation").textContent = data.event_location;
-    document.querySelector(".eventPrice").textContent = data.ticket_price + " dkk";
+
     document.querySelector("img").src = data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
 };
